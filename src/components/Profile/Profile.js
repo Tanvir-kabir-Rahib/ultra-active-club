@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Profile.css"
 import profile from "../../images/PSX_20190311_202001-01.jpeg"
-import {toast} from "react-toastify"
+import {toast, ToastContainer} from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
 const Profile = (props) => {
@@ -63,6 +63,7 @@ const Profile = (props) => {
                 <button onClick={() => toastify()} className="btn btn-primary mt-4">
                     Activity Completed
                 </button>
+                <ToastContainer/>
             </div>
 
         </div>
