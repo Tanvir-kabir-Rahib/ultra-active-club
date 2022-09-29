@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Profile.css"
 import profile from "../../images/PSX_20190311_202001-01.jpeg"
-import { addToDb, getDb, removeFromDb, clearTheTime, getStoredTime } from '../../utilities/fakedb';
+import { addToDb, removeFromDb, clearTheTime, getStoredTime } from '../../utilities/fakedb';
 
 const Profile = (props) => {
     const {exTime} = props
-    console.log(exTime)
     const breaks = [10,20,30,40,50,60];
-    const breakHandler = () => {
-        
+    const [breakTime, setBreakTime] = useState(0)
+    const breakHandler = (time) => {
+        setBreakTime(time)
+
     }
     return (
         <div className='px-2'>
@@ -45,7 +46,7 @@ const Profile = (props) => {
                 </div>
                 <div className='d-flex align-items-center justify-content-between back-ground p-3 rounded-3 mb-4'>
                     <p className='mb-0 fw-bolder'>Break Time</p>
-                    <p className='mb-0 fw-bolder text-secondary'><span>0 </span><span>seconds</span></p>
+                    <p className='mb-0 fw-bolder text-secondary'><span>{breakTime} </span><span>seconds</span></p>
                 </div>
             </div>
             <div className='text-center'>
