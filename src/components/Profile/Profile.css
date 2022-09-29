@@ -2,16 +2,14 @@
     max-height: 50px;
     max-width: 50px;
     border-radius: 5px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-.person-name{
-    margin-bottom: 0px;
+
+.back-ground{
+    background-color: rgb(230, 230, 230);
 }
-.location{
-    margin-bottom: 0px;
-    color: gray;
-}
-.person-data{
-    display: flex;
-    align-items: center;
+
+.detail{
+    height: 60px;
+    width: 75px;
 }
