@@ -16,7 +16,7 @@ const Exercises = () => {
     }
     return (
         <div className='page-griding'>
-            <div className='bg-light rounded-5 mt-5 mb-5'>
+            <div className='bg-light rounded-5 mt-5 mb-5 p-3'>
                 <h3 >Select Today's Exercise</h3>
                 <div className='row mt-3'>
                     {exercises.map(exercise => <Exercise key={exercise.key} exercise={exercise} addToList={addToList}></Exercise>)}
