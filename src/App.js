@@ -6,7 +6,7 @@ import Profile from './components/Profile/Profile';
 function App() {
   return (
     <div className="App page-griding">
-      <div>
+      <div className=''>
         <Header></Header>
       </div>
       <div>

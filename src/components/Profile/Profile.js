@@ -5,8 +5,8 @@ import Break from '../Break/Break';
 
 const Profile = () => {
     return (
-        <div>
-            <div className='d-flex align-items-center mb-5'>
+        <div className='px-2'>
+            <div className='d-flex align-items-center mb-4'>
                 <img className='profile' src={profile} alt="" />
                 <div>
                     <h4 className='mb-0'> Tanvir Kabir</h4>
@@ -30,17 +30,21 @@ const Profile = () => {
             <h3 className='mb-3'>Add A Break</h3>
             <Break></Break>
             <div className='mt-5'>
-                <h3>Exercise Details</h3>
-                <div>
-
+                <h3 className='mb-4'>Exercise Details</h3>
+                <div className='d-flex align-items-center justify-content-between back-ground p-3 rounded-3 mb-4'>
+                    <p className='mb-0 fw-bolder'>Exercise time</p>
+                    <p className='mb-0 fw-bolder text-secondary'><span>0 </span><span>minutes</span></p>
                 </div>
-                <div>
-
+                <div className='d-flex align-items-center justify-content-between back-ground p-3 rounded-3 mb-4'>
+                    <p className='mb-0 fw-bolder'>Break Time</p>
+                    <p className='mb-0 fw-bolder text-secondary'><span>0 </span><span>seconds</span></p>
                 </div>
             </div>
-            <button className="btn btn-lg btn-primary mt-5">
+            <div className='text-center'>
+            <button className="btn btn-primary mt-4">
                 Activity Completed
             </button>
+            </div>
 
         </div>
     );
