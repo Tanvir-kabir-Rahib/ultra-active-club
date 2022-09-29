@@ -1,10 +1,24 @@
 .App{
   margin-top: 75px;
   margin-left: 75px;
+  
   margin-bottom: 75px;
 }
 .page-griding{
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 32px;
+}
+
+@media screen and (max-width: 576px){
+  .App{
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 75px;
+  }
+  .page-griding{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
 }
