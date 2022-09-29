@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./Profile.css"
 import profile from "../../images/PSX_20190311_202001-01.jpeg"
+import {toast} from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const Profile = (props) => {
     const { exTime } = props
@@ -15,6 +17,9 @@ const Profile = (props) => {
         localStorage.setItem("break_time", JSON.stringify(time));
         const storedTime = localStorage.getItem("break_time");
         setBreakTime(JSON.parse(storedTime))
+    }
+    const toastify = () => {
+        toast("You Did It")
     }
     return (
         <div className='px-2'>
@@ -55,7 +60,7 @@ const Profile = (props) => {
                 </div>
             </div>
             <div className='text-center'>
-                <button className="btn btn-primary mt-4">
+                <button onClick={() => toastify()} className="btn btn-primary mt-4">
                     Activity Completed
                 </button>
             </div>
