@@ -1,9 +1,15 @@
 import React from 'react';
 import "./Profile.css"
 import profile from "../../images/PSX_20190311_202001-01.jpeg"
-import Break from '../Break/Break';
+import { addToDb, getDb, removeFromDb, clearTheTime, getStoredTime } from '../../utilities/fakedb';
 
-const Profile = () => {
+const Profile = (props) => {
+    const {exTime} = props
+    console.log(exTime)
+    const breaks = [10,20,30,40,50,60];
+    const breakHandler = () => {
+        
+    }
     return (
         <div className='px-2'>
             <div className='d-flex align-items-center mb-4'>
@@ -28,12 +34,14 @@ const Profile = () => {
                 </div>
             </div>
             <h3 className='mb-3'>Add A Break</h3>
-            <Break></Break>
+            <div className='breaks d-flex flex-wrap justify-content-around align-items-center py-2 px-1 rounded back-ground'>
+                {breaks.map(b => <button className='mb-0 bg-white p-2 rounded-circle border border-0' onClick={() => breakHandler(b)}>{b}</button>)}
+            </div>
             <div className='mt-5'>
                 <h3 className='mb-4'>Exercise Details</h3>
                 <div className='d-flex align-items-center justify-content-between back-ground p-3 rounded-3 mb-4'>
                     <p className='mb-0 fw-bolder'>Exercise time</p>
-                    <p className='mb-0 fw-bolder text-secondary'><span>0 </span><span>minutes</span></p>
+                    <p className='mb-0 fw-bolder text-secondary'><span>{exTime} </span><span>minutes</span></p>
                 </div>
                 <div className='d-flex align-items-center justify-content-between back-ground p-3 rounded-3 mb-4'>
                     <p className='mb-0 fw-bolder'>Break Time</p>

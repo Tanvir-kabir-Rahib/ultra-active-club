@@ -1,0 +1,13 @@
+.page-griding {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+}
+
+@media screen and (max-width: 576px) {
+    .page-griding {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
