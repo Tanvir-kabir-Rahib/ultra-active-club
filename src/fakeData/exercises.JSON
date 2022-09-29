@@ -1,0 +1,38 @@
+[
+    {
+        "key" : 1,
+        "name" : "Bench Press",
+        "img_url" : "https://blog.nasm.org/hubfs/bench-press-biomechanics.jpg",
+        "time" : 10
+    },
+    {
+        "key" : 2,
+        "name" : "Shoulder Press",
+        "img_url" : "https://themaclife.com/wp-content/uploads/2019/09/overhead-press.jpg",
+        "time" : 10
+    },
+    {
+        "key" : 3,
+        "name" : "Dead Lift",
+        "img_url" : "",
+        "time" : 15
+    },
+    {
+        "key" : 4,
+        "name" : "Leg Press",
+        "img_url" : "https://www.mensjournal.com/wp-content/uploads/mf/deadlift_main_1280.jpg?quality=86&strip=all",
+        "time" : 10
+    },
+    {
+        "key" : 5,
+        "name" : "Lat Pulldown",
+        "img_url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbCvkn-cMHk-8gwjXI8xLZ-dgZRiMDpGXn0wKHE__ebOtXahzvtD-5KENkffH1rQbzxMk&usqp=CAU",
+        "time" : 12
+    },
+    {
+        "key" : 6,
+        "name" : "Cardio",
+        "img_url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQvaVXqB1UvdmhocH_-mtENX_8cqP3JvJfg&usqp=CAU",
+        "time" : 12
+    }
+]
